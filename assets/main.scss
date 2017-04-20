@@ -26,29 +26,101 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+@font-face {
+  font-family: 'QuicksandBold';
+  src: url('./fonts/Quicksand-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'QuicksandRegular';
+  src: url('./fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RalewayBold';
+  src: url('./fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('./fonts/Raleway-Regular.ttf');
+}
 
 // Import partials from the `minima` theme.
-@import "minima";
+// @import "minima";
 
-.logo-container {
-  
-  display: flex;
-  justify-content: center;
+body {
+  background-color: $background-color;
+}
 
-  .logo {
-    width: 30%;
-    height: 30%;
+.site-header{
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .small-logo {
+      display: block;
+      background: url('./images/white.png') center no-repeat;
+      height: 50px;
+      width: 50px;
+      background-size: 28px;
+      margin-top: 15px;
+      margin-left: 15px
+    }
+
+    .hamburger-menu {
+      display: block;
+      background: url('./images/menu-lines.png') center no-repeat;
+      height: 50px;
+      width: 50px;
+      background-size: 25px;
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+
   }  
 
 }
+
+
+.home {
+
+  .logo-container {
+  
+    display: flex;
+    justify-content: center;
+
+    .logo {
+      width: 25%;
+      height: 30%;
+    }  
+
+  }  
+  
+  .heading-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .name-heading {
+      font-family: QuicksandRegular;
+      color: $text-color;
+    }
+
+    .ui-ux-heading {
+      margin-top: -15px;
+      font-family: QuicksandRegular;
+      color: $text-color;
+    }
+
+  }
+
+}
+
 
 .mini-icon-container {
   width: 100px;
@@ -60,6 +132,7 @@ $on-laptop:        800px;
     width: 100%;
     height: auto;
   }
+
 }
 
 
