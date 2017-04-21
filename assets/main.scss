@@ -4,7 +4,8 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: QuicksandBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-subheading-font-family: RalewayLight, Helvetica;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -12,9 +13,17 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+$button-font-family: QuicksandRegular, Helvetica;
+$button-width: 280px;
+$button-height: 85px;
+$button-font-size: 18px;
+
+$footer-background-color: #666;
+
 $text-color:       #fff;
 $background-color: #ff7373;
 $brand-color:      #2a7ae2;
+$hover-button-color: #ffc2e4;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -42,8 +51,13 @@ $on-laptop:        800px;
 }
 
 @font-face {
-  font-family: 'Raleway-Regular';
+  font-family: 'RalewayRegular';
   src: url('./fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: "RalewayLight";
+  src: url('./fonts/Raleway-Light.ttf');
 }
 
 // Import partials from the `minima` theme.
@@ -63,9 +77,9 @@ body {
     .small-logo {
       display: block;
       background: url('./images/white.png') center no-repeat;
-      height: 50px;
+      height: 42px;
       width: 50px;
-      background-size: 28px;
+      background-size: 35px;
       margin-top: 15px;
       margin-left: 15px
     }
@@ -73,9 +87,9 @@ body {
     .hamburger-menu {
       display: block;
       background: url('./images/menu-lines.png') center no-repeat;
-      height: 50px;
-      width: 50px;
-      background-size: 25px;
+      height: 40px;
+      width: 40px;
+      background-size: 30px;
       margin-top: 15px;
       margin-right: 15px;
     }
@@ -87,15 +101,21 @@ body {
 
 .home {
 
-  .logo-container {
+  .image-container {
   
     display: flex;
     justify-content: center;
+    margin-top: 200px;
 
     .logo {
-      width: 25%;
-      height: 30%;
+      width: 330px;
+      height: 356px;
     }  
+
+    .project-image {      
+      height: 808px;
+      width: 940px;
+    }
 
   }  
   
@@ -106,31 +126,114 @@ body {
     align-items: center;
     flex-direction: column;
 
-    .name-heading {
-      font-family: QuicksandRegular;
+    .top-heading {
+      font-family: $base-font-family;
       color: $text-color;
+      letter-spacing: 7px;
+      font-size: 30px;
+
+      &.project {
+        font-size: 45px;
+      }
     }
 
-    .ui-ux-heading {
-      margin-top: -15px;
-      font-family: QuicksandRegular;
+    .bottom-heading {
+      font-family: $base-font-family;
       color: $text-color;
+      letter-spacing: 7px;
+      font-size: 30px;
+      margin-top: -15px;
+
+      &.design-description {
+        font-family: $base-subheading-font-family;
+        font-size: 25px;
+        margin-top: -30px;
+        letter-spacing: 1px;
+      }
     }
 
   }
 
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+
+    &.projectdetails {
+      margin-top: 3px;
+    }
+  
+    .actionbutton-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #666;
+      color: #fff;
+      font-family: $button-font-family;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 15px;
+      width: $button-width;
+      height: $button-height;
+      letter-spacing: 1px;
+      font-size: $button-font-size;
+
+      &:hover {
+        background-color: $hover-button-color;
+      }
+
+    }
+
+    .actionbutton-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #666; 
+      color: #fff;
+      font-family: $button-font-family;
+      border-radius: 5px;
+      margin-left: 15px;
+      cursor: pointer;
+      width: $button-width;
+      height: $button-height;
+      letter-spacing: 1px;
+      font-size: $button-font-size;
+
+      &:hover {
+        background-color: $hover-button-color;
+      }
+
+    }
+
+  }
+
+  .downarrow-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  
+    .downarrow-button {
+      background: url('../assets/images/arrowdown.png') no-repeat 19px center;
+      background-size: 22px;
+      height: 80px;
+      width: 60px;
+    }
+    
+  }
+
+  
+
 }
 
+.site-footer {
+  
+  margin-top: 250px;
 
-.mini-icon-container {
-  width: 100px;
-  height: 100px;
+  .wrapper {
 
-  .mini-icon {
-    background: url('../assets/images/white.png') no-repeat 6px center;
-    display: block;
-    width: 100%;
-    height: auto;
+    background-color: $footer-background-color;
+    height: 512px;
+    width: auto;
+  
   }
 
 }
