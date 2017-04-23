@@ -116,13 +116,14 @@ body {
     justify-content: center;
     margin-right: 115px;
 
-    .text {
+    .text { 
       margin-right: 80px;
       p {
         font-size: 17px;
         color: $text-color;
         font-family: $base-subheading-font-family;
         letter-spacing: 5px;
+        margin-top: -15px;
       }
     }
 
@@ -136,6 +137,46 @@ body {
   }
 
 
+}
+
+.services-container {
+
+  margin-top: 300px;
+
+  font-family: $base-subheading-font-family;
+  color: $text-color;
+  text-align: left;
+  letter-spacing: 4px;
+  
+  .services-heading {
+    margin-left: 117px;
+    font-family: $base-font-family;
+    color: $text-color;
+    text-decoration: underline;
+    font-size: 18px;
+  }
+
+  .left-pair {
+    width: 450px;
+  }
+
+  .right-pair {
+    width: 450px;
+    margin-left: 35px;
+  }
+
+  .design-pair {
+    display: flex;
+    justify-content: center;
+    margin-left: -96px;
+    margin-bottom: 100px;
+    font-size: 12px;
+  }
+
+  .printdesign {
+    margin-left: 117px;
+    font-size: 12px;
+  }
 }
 
 
