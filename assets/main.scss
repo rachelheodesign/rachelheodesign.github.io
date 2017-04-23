@@ -68,6 +68,78 @@ body {
   margin: 0;
 }
 
+.quote-container {
+  display: flex;
+  justify-content: center;
+
+  blockquote {
+    font-family: $base-font-family;
+    color: $text-color;
+    width: 800px;
+    font-size: 25px;
+    letter-spacing: 6px;
+
+    p {
+      text-align: justify;
+    }
+
+    footer {
+      font-family: $base-subheading-font-family;
+      color: $text-color;
+      font-size: 12px;
+      margin-left: 528px;
+    }
+
+  } 
+
+}
+
+.about-container {
+  
+  margin-left: 120px;
+  margin-top: 175px;
+
+  .about-heading {
+    h2 {
+      font-size: 22px;
+      color: $text-color;
+      text-decoration: underline;
+      font-family: $base-font-family;
+      letter-spacing: 6px;
+      margin-bottom: 35px;
+    }
+  }
+  
+  .about-content {
+    
+    display: flex;
+    justify-content: center;
+    margin-right: 115px;
+
+    .text {
+      margin-right: 80px;
+      p {
+        font-size: 17px;
+        color: $text-color;
+        font-family: $base-subheading-font-family;
+        letter-spacing: 5px;
+      }
+    }
+
+    .profile-image {
+      img {
+        height: 400px;
+        width: 400px;
+      }
+    }
+
+  }
+
+
+}
+
+
+
 .site-header {
 
   .wrapper {
