@@ -179,6 +179,169 @@ body {
   }
 }
 
+.contact-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .emoji-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      > .emoji-blush {
+        visibility: visible;
+      }
+    }
+
+    .emoji {
+      width: 200px;
+      height: 200px;
+    }
+
+    .emoji-blush {
+      
+      visibility: hidden;
+      margin-top: -198px;
+      margin-left: 122px;
+
+      img {
+        height: 108px;
+      }
+
+    }
+
+  }
+
+  .availability-container {
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+      font-family: $base-subheading-font-family;
+      color: $text-color;
+      font-size: 16px;
+      width: 600px;
+      letter-spacing: 3px;
+      margin-top: -5px;
+
+    }
+
+    .availability-header {
+      margin-bottom: 60px;
+      font-family: $base-font-family;
+      color: $text-color;
+      letter-spacing: 5px;
+      font-size: 25px;
+      white-space: nowrap;
+      margin-right: 64px;
+    }
+
+    .availability-description {
+
+      margin-left: 40px;
+
+      p {
+
+        &:nth-child(1) {
+          margin-left: 142px;
+        }
+
+        &:nth-child(2) {
+          margin-left: 195px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 180px;
+        }
+
+      }
+
+    }
+
+  }
+
+  a {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #666; 
+    color: #fff;
+    font-family: $button-font-family;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    width: $button-width;
+    height: $button-height;
+    letter-spacing: 1px;
+    font-size: $button-font-size;
+    text-decoration: none;
+    margin-top: 55px;
+
+    &:hover {
+      background-color: $hover-button-color;
+    }
+
+  }
+
+  .socialmedia-buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    margin-right: 25px;
+
+    .social-email {
+      width: 70px;
+      height: 60px;
+      display: block;
+      background: url('../assets/images/closed-envelope-circle.png') 6px center no-repeat;
+      background-size: 60px;
+      margin-left: 42px;
+      margin-right: 35px;
+    }
+      
+
+    .social-facebook {
+      width: 70px;
+      height: 60px;
+      display: block;
+      background: url('../assets/images/facebook-logo-button.png') 6px center no-repeat;
+      background-size: 60px;
+      margin-left: 45px;
+      margin-right: 35px;
+    }
+
+    .social-instagram {
+      width: 70px;
+      height: 60px;
+      display: block;
+      background: url('../assets/images/instagram-logo.png') 6px center no-repeat;
+      background-size: 60px;
+    }
+    
+    .social-linkedin {
+      width: 70px;
+      height: 60px;
+      display: block;
+      background: url('../assets/images/linkedin-button.png') 6px center no-repeat;
+      background-size: 60px;
+    }
+
+  }
+
+}
+
+.testimonial-container {
+
+}
 
 
 .site-header {
