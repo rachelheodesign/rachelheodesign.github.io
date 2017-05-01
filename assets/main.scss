@@ -560,15 +560,19 @@ body {
       align-items: center;
       justify-content: center;
       background-color: #666;
-      color: #fff;
-      font-family: $button-font-family;
       border-radius: 5px;
       cursor: pointer;
       margin-right: 15px;
       width: $button-width;
       height: $button-height;
-      letter-spacing: 1px;
-      font-size: $button-font-size;
+
+      a {
+        color: #fff;
+        font-family: $button-font-family;
+        letter-spacing: 1px;
+        font-size: $button-font-size;
+        text-decoration: none;
+      }
 
       &:hover {
         background-color: $hover-button-color;
@@ -580,16 +584,20 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #666; 
-      color: #fff;
-      font-family: $button-font-family;
+      background-color: #666;       
       border-radius: 5px;
       margin-left: 15px;
       cursor: pointer;
       width: $button-width;
       height: $button-height;
-      letter-spacing: 1px;
-      font-size: $button-font-size;
+
+      a {
+        color: #fff;
+        font-family: $button-font-family;
+        letter-spacing: 1px;
+        font-size: $button-font-size;
+        text-decoration: none;
+      }
 
       &:hover {
         background-color: $hover-button-color;
