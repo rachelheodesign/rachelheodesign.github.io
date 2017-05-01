@@ -97,7 +97,7 @@ body {
 
 .about-container {
   
-  margin-left: 120px;
+  margin-left: 188px;
   margin-top: 175px;
 
   .about-heading {
@@ -118,20 +118,28 @@ body {
     margin-right: 115px;
 
     .text { 
-      margin-right: 80px;
+      margin-right: 25px;
+
       p {
-        font-size: 17px;
+        font-size: 16px;
         color: $text-color;
         font-family: $base-subheading-font-family;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         margin-top: -15px;
+        line-height: 22px;
+        width: 600px;
       }
+
     }
 
     .profile-image {
+
+      margin-right: 39px;
+      margin-top: -9px;
+
       img {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
       }
     }
 
@@ -142,7 +150,8 @@ body {
 
 .services-container {
 
-  margin-top: 300px;
+  margin-top: 150px;
+  margin-left: 138px;
 
   font-family: $base-subheading-font-family;
   color: $text-color;
@@ -150,7 +159,7 @@ body {
   letter-spacing: 4px;
   
   .services-heading {
-    margin-left: 117px;
+    margin-left: 47px;
     font-family: $base-font-family;
     color: $text-color;
     text-decoration: underline;
@@ -175,7 +184,7 @@ body {
   }
 
   .printdesign {
-    margin-left: 117px;
+    margin-left: 48px;
     font-size: 12px;
   }
 }
