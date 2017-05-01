@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+
 ---
 @charset "utf-8";
 
@@ -340,6 +340,34 @@ body {
 }
 
 .testimonial-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .testimonial {
+    width: 900px;
+    text-align: right;
+    color: $text-color;
+
+    blockquote {
+      
+      margin-top: 120px;
+      letter-spacing: 5px;
+
+      p {
+          font-family: $base-font-family;
+          font-size: 24px;
+      }
+
+      footer {
+          font-family: $base-subheading-font-family;
+          font-size: 16px;
+      }
+
+    }
+
+  }
 
 }
 
@@ -350,6 +378,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: 0;
 
     .small-logo {
       display: block;
@@ -358,19 +389,96 @@ body {
       width: 50px;
       background-size: 35px;
       margin-top: 15px;
-      margin-left: 15px
+      margin-left: 15px;
     }
 
     .hamburger-menu {
-      display: block;
-      background: url('./images/menu-lines.png') center no-repeat;
-      height: 40px;
-      width: 40px;
-      background-size: 30px;
-      margin-top: 15px;
-      margin-right: 15px;
+
+      margin-top: 12px;
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.is-active {
+
+        .line {
+          
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(1) {
+            -webkit-transform: translateY(9px) rotate(45deg);
+            -ms-transform: translateY(9px) rotate(45deg);
+            -o-transform: translateY(9px) rotate(45deg);
+            transform: translateY(9px) rotate(45deg);
+          }
+
+          &:nth-child(3) {
+
+            -webkit-transform: translateY(-13px) rotate(-45deg);
+            -ms-transform: translateY(-13px) rotate(-45deg);
+            -o-transform: translateY(-13px) rotate(-45deg);
+            transform: translateY(-13px) rotate(-45deg);
+
+          }
+
+        }
+
+      }
+
+      .line {
+        background-color: $text-color;        
+        height: 5px;
+        width: 35px;
+        display: block;                
+        margin-top: 6px;
+        margin-right: 20px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+
+      }
+
     }
 
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 0;
+    background-color: $footer-background-color;
+    height: 500px;
+    width: 100%;
+    display: none;
+    
+    ul {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      list-style: none;
+      margin-top: 80px;
+      margin-right: 20px;
+
+      li {
+        font-family: $base-subheading-font-family;
+        font-size: 16px;
+        margin-top: 50px;
+        
+        a {
+          text-decoration: none;
+          color: $text-color;
+
+          &:hover {
+            color: $hover-button-color;
+          }
+
+        }
+
+      }
+
+    }
+    
   }  
 
 }
