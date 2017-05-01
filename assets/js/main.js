@@ -17,4 +17,9 @@ $(document).ready(function() {
 
         $(".dropdown-menu").slideToggle("fast");
     });
+
+    $(window).on("scroll", function() {
+        var fromTop = $(window).scrollTop();
+        $(".dropdown-menu").toggleClass("is-fixed", (fromTop > 20));
+    });
 });
