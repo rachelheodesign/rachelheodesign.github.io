@@ -81,14 +81,14 @@ body {
     letter-spacing: 6px;
 
     p {
-      text-align: justify;
+      text-align: right;
     }
 
     footer {
       font-family: $base-subheading-font-family;
       color: $text-color;
       font-size: 12px;
-      margin-left: 528px;
+      margin-left: 580px;
     }
 
   } 
@@ -156,18 +156,23 @@ body {
   font-family: $base-subheading-font-family;
   color: $text-color;
   text-align: left;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   
   .services-heading {
     margin-left: 47px;
     font-family: $base-font-family;
     color: $text-color;
     text-decoration: underline;
-    font-size: 18px;
+    
+    h2 {
+      font-size: 22px;
+      letter-spacing: 6px;
+    }
   }
 
   .left-pair {
     width: 450px;
+    font-size: 15px;
   }
 
   .right-pair {
@@ -179,8 +184,8 @@ body {
     display: flex;
     justify-content: center;
     margin-left: -96px;
-    margin-bottom: 100px;
-    font-size: 12px;
+    margin-bottom: 75px;
+    font-size: 15px;
   }
 
   .printdesign {
@@ -410,12 +415,13 @@ body {
         flex-direction: column;
         list-style: none;
         margin-top: 80px;
-        margin-right: 20px;
+        margin-right: 40px;
 
       li {
           font-family: $base-subheading-font-family;
           font-size: 16px;
           margin-top: 50px;
+          letter-spacing: 5px;
         
         a {
             text-decoration: none;
@@ -441,14 +447,15 @@ body {
       background-size: 35px;
       margin-top: 15px;
       margin-left: 15px;
-      z-index: 3;
     }
 
     .hamburger-menu {
 
       z-index: 3;
 
-      margin-top: 12px;
+      margin-top: 20px;
+      margin-right: 12px;
+
       &:hover {
         cursor: pointer;
       }
@@ -470,10 +477,10 @@ body {
 
           &:nth-child(3) {
 
-            -webkit-transform: translateY(-13px) rotate(-45deg);
-            -ms-transform: translateY(-13px) rotate(-45deg);
-            -o-transform: translateY(-13px) rotate(-45deg);
-            transform: translateY(-13px) rotate(-45deg);
+            -webkit-transform: translateY(-9px) rotate(-45deg);
+            -ms-transform: translateY(-9px) rotate(-45deg);
+            -o-transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-9px) rotate(-45deg);
 
           }
 
@@ -483,8 +490,8 @@ body {
 
       .line {
         background-color: $text-color;        
-        height: 5px;
-        width: 35px;
+        height: 3px;
+        width: 25px;
         display: block;                
         margin-top: 6px;
         margin-right: 20px;
