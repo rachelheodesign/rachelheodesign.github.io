@@ -101,6 +101,9 @@ body {
   margin-top: 175px;
 
   .about-heading {
+
+    margin-left: 85px;
+
     h2 {
       font-size: 22px;
       color: $text-color;
@@ -151,7 +154,7 @@ body {
 .services-container {
 
   margin-top: 150px;
-  margin-left: 138px;
+  margin-left: 284px;
 
   font-family: $base-subheading-font-family;
   color: $text-color;
@@ -159,7 +162,7 @@ body {
   letter-spacing: 2px;
   
   .services-heading {
-    margin-left: 47px;
+    margin-left: -5px;
     font-family: $base-font-family;
     color: $text-color;
     text-decoration: underline;
@@ -183,7 +186,7 @@ body {
   .design-pair {
     display: flex;
     justify-content: center;
-    margin-left: -96px;
+    margin-left: -228px;
     margin-bottom: 75px;
     font-size: 15px;
   }
@@ -192,6 +195,16 @@ body {
     margin-left: 48px;
     font-size: 12px;
   }
+
+  @media only screen and (min-width: 1440px) {
+
+    .printdesign {
+      margin-left: -4px;
+      font-size: 12px;
+    }
+  
+  }
+
 }
 
 .contact-container {
