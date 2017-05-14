@@ -16,9 +16,9 @@
 title: Rachel Heo - UI & UX Designer
 email: rachelheodesign@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi! My name is Rachel Heo, a freelance UI & UX designer who is based in Vancouver and Seoul.
+  I have a passion for creating beautiful, intuitive, and highly crafted designs combining a considered approach with emerging technologies. I have wide ranging skills in designing from web and mobile interfaces to prints and logos.
+  My strengths lie in my attention to detail, the ability to refine complex requirements and information into simple and elegant solutions. I am not interested in simply “ticking the boxes” and churning out average designs. I want to make sure that everything I produce is something that I would be excited about if I were the client. I love what I do and I do what I love, and it makes me want to always outdo myself and seek out new challenges.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rachelheodesign.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
