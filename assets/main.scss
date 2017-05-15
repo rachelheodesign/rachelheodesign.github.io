@@ -430,7 +430,7 @@ body {
   align-items: center;
 
   .testimonial {
-    width: 900px;
+    width: 80%;
     text-align: right;
     color: $text-color;
 
@@ -439,14 +439,54 @@ body {
       margin-top: 120px;
       letter-spacing: 5px;
 
+      @media (max-width: 495px) {
+        font-size: 100px;
+      }
+
+      @media(max-width: 320px) {
+        margin-top: 70px;
+      }
+
       p {
           font-family: $base-font-family;
           font-size: 24px;
+
+          @media (max-width: 630px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 550px) {
+            width: 100%;
+          }
+
+          @media (max-width: 495px) {
+            font-size: 16px;
+          }
+
+          @media (max-width: 320px) {
+            font-size: 10px;
+          }
       }
 
       footer {
           font-family: $base-subheading-font-family;
           font-size: 16px;
+
+          @media(max-width: 630px) {
+            font-size: 12px;
+          }
+
+          @media (max-width: 550px) {
+            width: 100%;
+          }
+
+          @media (max-width: 495px) {
+            font-size: 10px;
+          }
+
+          @media (max-width: 320px) {
+            font-size: 8px;
+          }
       }
 
     }
