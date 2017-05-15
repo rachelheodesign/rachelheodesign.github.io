@@ -14,7 +14,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $button-font-family: QuicksandRegular, Helvetica;
-$button-width: 280px;
+$button-width: 25%;
 $button-height: 85px;
 $button-font-size: 18px;
 
@@ -118,9 +118,11 @@ body {
     display: flex;
     justify-content: center;
     margin-left: 20px;
+    
     @media(max-width: 950px) {
       flex-direction: column;
     }
+
     h2 {
       font-size: 22px;
       color: $text-color;
@@ -268,32 +270,32 @@ body {
   text-align: center;
   
   .emoji-container {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    width: 200px;
 
-    &:hover {
-      > .emoji-blush {
-        visibility: visible;
-      }
+    margin-bottom: 40px;
+    width: 40%;
+
+    @media(max-width: 530px) {
+      margin-top: 75px;
     }
 
-    .emoji {
-      width: 200px;
-      height: 200px;
+    &:hover {
+      
+      > .emoji-blush {
+        
+        visibility: visible;
+
+      } 
     }
 
     .emoji-blush {
       
       visibility: hidden;
-      margin-top: -198px;
-      margin-left: 122px;
+      position: absolute;
+      left: 550px;
+      top: 200px;
 
-      img {
-        height: 108px;
+      @media(min-width: 768px) {
+        display: none;
       }
 
     }
@@ -301,19 +303,21 @@ body {
   }
 
   .availability-container {
-    margin-top: 75px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     
     p {
       font-family: $base-subheading-font-family;
       color: $text-color;
       font-size: 16px;
-      width: 600px;
       letter-spacing: 3px;
       margin-top: -5px;
 
+    }
+
+    @media (max-width: 530px) {
+      margin-top: 0;
     }
 
     .availability-header {
@@ -322,28 +326,33 @@ body {
       color: $text-color;
       letter-spacing: 5px;
       font-size: 25px;
-      white-space: nowrap;
-      margin-right: 64px;
+
+      @media (max-width: 721px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 619px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 451px) {
+        font-size: 16px;
+      }
+
     }
 
-    .availability-description {
+    p {
+      
+      @media (max-width: 721px) {
+        font-size: 16px;
+      }
 
-      margin-left: 40px;
+      @media (max-width: 619px) {
+        font-size: 14px;
+      }
 
-      p {
-
-        &:nth-child(1) {
-          margin-left: 142px;
-        }
-
-        &:nth-child(2) {
-          margin-left: 195px;
-        }
-
-        &:nth-child(3) {
-          margin-left: 180px;
-        }
-
+      @media (max-width: 451px) {
+        font-size: 12px;
       }
 
     }
@@ -359,7 +368,6 @@ body {
     color: #fff;
     font-family: $button-font-family;
     border-radius: 5px;
-    margin-left: 15px;
     cursor: pointer;
     width: $button-width;
     height: $button-height;
@@ -370,6 +378,10 @@ body {
 
     &:hover {
       background-color: $hover-button-color;
+    }
+
+    @media (max-width: 530px) {
+      width: 50%;
     }
 
   }
@@ -573,12 +585,11 @@ body {
     .hamburger-menu {
 
       z-index: 3;
-
+      width: 5%;
       margin-top: 20px;
-      margin-right: 12px;
-
-      @media(max-width: 768px) {
-        margin-right: 0;
+      
+      @media (max-width: 640px) {
+        margin-right: 15px;
       }
 
       &:hover {
@@ -619,7 +630,6 @@ body {
         width: 25px;
         display: block;                
         margin-top: 6px;
-        margin-right: 20px;
         -webkit-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
@@ -894,7 +904,7 @@ body {
 
   .uparrow-button {
     margin-top: 10px;
-    margin-right: 7px;
+    margin-right: 20px;
     background: url('../assets/images/arrowup.png') no-repeat 19px center;
     background-size: 22px;
     height: 80px;
