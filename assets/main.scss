@@ -247,7 +247,6 @@ body {
   }
 
   .printdesign {
-    // margin-left: 48px;
     font-size: 12px;
   }
 
@@ -274,34 +273,8 @@ body {
     margin-bottom: 40px;
     width: 40%;
 
-    @media(max-width: 530px) {
-      margin-top: 75px;
-    }
-
-    &:hover {
-      
-      > .emoji-blush {
-        
-        visibility: visible;
-
-      } 
-    }
-
-    .emoji-blush {
-      
-      visibility: hidden;
-      position: absolute;
-      left: 550px;
-      top: 200px;
-
-      @media(min-width: 768px) {
-        display: none;
-      }
-
-    }
-
   }
-
+  
   .availability-container {
     display: flex;
     flex-direction: column; 
@@ -435,6 +408,12 @@ body {
 
 }
 
+.emoji-blush {
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
 .testimonial-container {
   
   display: flex;
@@ -518,8 +497,8 @@ body {
 
 .site-header {
 
-  @media (max-width: 495px) {
-    margin-bottom: 10px;
+  @media (max-width: 530px) {
+    margin-bottom: 140px;
   }
 
   margin-bottom: 200px;
