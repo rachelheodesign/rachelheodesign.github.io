@@ -12,10 +12,10 @@ $(document).ready(function() {
         }, 2000);
     });
     
-    $(".hamburger-menu").click(function() {
+    $(".hamburger-menu").click(function(e) {
         $(this).toggleClass("is-active");
 
-        $(".dropdown-menu").slideToggle("fast");
+        $('.dropdown-menu').slideToggle("fast");
     });
 
     $(window).on("scroll", function() {
