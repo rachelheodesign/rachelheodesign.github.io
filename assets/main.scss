@@ -658,6 +658,10 @@ body {
       letter-spacing: 7px;
       font-size: 30px;
 
+      @media(max-width: 320px) {
+          font-size: 25px;
+      }
+
       &.project {
         font-size: 4.5vw;
         margin-bottom: 50px;
@@ -685,11 +689,19 @@ body {
       font-size: 30px;
       margin-top: -15px;
 
+      @media(max-width: 320px) {
+          font-size: 25px;
+      }
+
       &.design-description {
         font-family: $base-subheading-font-family;
         font-size: 3vw;
         margin-top: -30px;
         letter-spacing: 1px;
+
+        @media(max-width: 320px) {
+          font-size: 3.5vw;
+        }
       }
     }
 
@@ -731,6 +743,11 @@ body {
           height: 50px;
       }
 
+      @media(max-width: 320px) {
+          min-width: 100px;
+          height: 40px;
+      }
+
       a {
         color: #fff;
         font-family: $button-font-family;
@@ -748,6 +765,10 @@ body {
 
         @media(max-width: 342px) {
           font-size: 11px;
+        }
+
+        @media(max-width: 320px) {
+          font-size: 9px;
         }
       }
 
@@ -785,6 +806,11 @@ body {
           height: 50px;
       }
 
+      @media(max-width: 320px) {
+          min-width: 100px;
+          height: 40px;
+      }
+
       a {
         color: #fff;
         font-family: $button-font-family;
@@ -802,6 +828,10 @@ body {
 
         @media(max-width: 342px) {
           font-size: 11px;
+        }
+
+        @media(max-width: 320px) {
+          font-size: 9px;
         }
       }
 
