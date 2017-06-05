@@ -582,6 +582,10 @@ body {
       z-index: 3;
       width: 5%;
       margin-top: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      
 
       @media(max-width: 860px) {
         margin-right: 5px;
