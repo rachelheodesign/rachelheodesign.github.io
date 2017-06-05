@@ -422,8 +422,10 @@ body {
 }
 
 .emoji-blush {
-  @media (max-width: 639px) {
-    display: none;
+  img {
+    position: absolute;
+    top: 200px;
+    left: 535px;
   }
 }
 
