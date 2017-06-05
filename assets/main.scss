@@ -529,10 +529,12 @@ body {
     .dropdown-menu {
       position: absolute;
       top: 0;
+      right: 0;
       background-color: $footer-background-color;
       height: 500px;
       width: 100%;
       display: none;
+      z-index: 2;
     
       ul {
         display: flex;
@@ -572,6 +574,7 @@ body {
       background-size: 35px;
       margin-top: 15px;
       margin-left: 15px;
+      z-index: 3;
     }
 
     .hamburger-menu {

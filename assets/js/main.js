@@ -12,7 +12,7 @@ $(document).ready(function() {
         }, 2000);
     });
     
-    $(".hamburger-menu").click(function(e) {
+    $(".hamburger-menu").click(function() {
         $(this).toggleClass("is-active");
 
         $('.dropdown-menu').slideToggle("fast");
